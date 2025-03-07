@@ -2,6 +2,9 @@ import React from 'react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import './reset.css'
+import { ThemeProvider } from '@/context/ThemeContext'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -44,10 +47,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+          `}
+        </Script>
+      </head>
       <body className={inter.className}>
-        <main className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-900 to-black">
-          {children}
-        </main>
+        <ThemeProvider>
+          <main className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-900 to-black">
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   )
