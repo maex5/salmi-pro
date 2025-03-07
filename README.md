@@ -1,57 +1,73 @@
-# Max Salmi - Personal Website
+# Max Salmi's Portfolio
 
-A modern, responsive personal website built with Next.js, TypeScript, and Tailwind CSS.
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features a beautiful glass-morphism design with dark mode support.
 
-## Technologies Used
+## 🌟 Features
+
+- Modern glass-morphism design
+- Dark mode support
+- Responsive layout
+- Smooth animations
+- Contact information and references
+- Project showcase
+- Skills and experience timeline
+- Awards and education sections
+
+## 🚀 Tech Stack
 
 - Next.js 14
 - TypeScript
 - Tailwind CSS
-- React
-- Font Awesome
+- React Icons
+- Vercel (Deployment)
 
-## Features
+## 🛠️ Local Development
 
-- Responsive design
-- Modern UI components
-- Type-safe code
-- SEO optimized
-- Fast performance
-
-## Development
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## Building for Production
-
+1. Clone the repository:
 ```bash
-npm run build
+git clone https://github.com/maex5/salmi-pro.git
+cd salmi-pro
 ```
 
-## Deployment
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
 
-This site can be easily deployed to Vercel:
+3. Run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Vercel will automatically deploy your site with HTTPS enabled
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Project Structure
+## 🌐 Deployment
 
-- `/src/app` - Next.js app router pages
-- `/src/components` - React components
-- `/public` - Static assets (images, etc.)
-- `/src/styles` - Global styles
+This project is deployed on Vercel:
 
-## License
+- Production URL: [https://salmi.pro](https://salmi.pro)
+- Vercel Dashboard: [https://vercel.com/max-salmis-projects/salmi-pro](https://vercel.com/max-salmis-projects/salmi-pro)
 
-MIT 
+### Deployment Process
+
+1. Push changes to the main branch:
+```bash
+git push origin main
+```
+
+2. Deploy to production:
+```bash
+vercel --prod
+```
+
+## 📝 License
+
+This project is private and confidential. All rights reserved. 
