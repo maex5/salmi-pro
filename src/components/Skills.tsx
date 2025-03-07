@@ -13,36 +13,64 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    name: 'Ad Tech & Platform Engineering',
+    name: 'Advertising Technology & Monetization',
     skills: [
       { name: 'Ad Tech', endorsements: 42, isVerified: true },
       { name: 'Programmatic', endorsements: 38, isVerified: true },
       { name: 'Header Bidding', endorsements: 35, isVerified: true },
       { name: 'GAM', endorsements: 33, isVerified: true },
       { name: 'Ad Operations', endorsements: 31, isVerified: true },
-      { name: 'Performance Optimization', endorsements: 29, isVerified: true }
+      { name: 'Ad Monetization', endorsements: 29, isVerified: true }
     ]
   },
   {
-    name: 'Software Development & Architecture',
+    name: 'Data & Performance Analytics',
+    skills: [
+      { name: 'Data Analytics', endorsements: 39, isVerified: true },
+      { name: 'Performance Optimization', endorsements: 36, isVerified: true },
+      { name: 'A/B Testing', endorsements: 34, isVerified: true },
+      { name: 'Performance Marketing', endorsements: 32, isVerified: true },
+      { name: 'Business Intelligence', endorsements: 30, isVerified: true }
+    ]
+  },
+  {
+    name: 'Web Development & Technical Skills',
     skills: [
       { name: 'JavaScript', endorsements: 45, isVerified: true },
       { name: 'TypeScript', endorsements: 40, isVerified: true },
       { name: 'React', endorsements: 38, isVerified: true },
-      { name: 'Node.js', endorsements: 36, isVerified: true },
       { name: 'API Integration', endorsements: 34, isVerified: true },
-      { name: 'Web Development', endorsements: 32, isVerified: true }
+      { name: 'Web Development', endorsements: 32, isVerified: true },
+      { name: 'Technical Integration', endorsements: 27, isVerified: true }
     ]
   },
   {
-    name: 'Additional Skills',
+    name: 'Leadership & Strategy',
     skills: [
       { name: 'Team Leadership', endorsements: 39, isVerified: true },
       { name: 'Project Management', endorsements: 36, isVerified: true },
+      { name: 'Strategic Planning', endorsements: 33, isVerified: true },
+      { name: 'Cross-functional Teams', endorsements: 31, isVerified: true },
+      { name: 'Technical Leadership', endorsements: 29, isVerified: true }
+    ]
+  },
+  {
+    name: 'AI & Automation',
+    skills: [
+      { name: 'AI Tools', endorsements: 35, isVerified: true },
+      { name: 'ChatGPT', endorsements: 33, isVerified: true },
+      { name: 'Copilot', endorsements: 31, isVerified: true },
+      { name: 'Automation', endorsements: 29, isVerified: true }
+    ]
+  },
+  {
+    name: 'Business & Market Strategy',
+    skills: [
       { name: 'Digital Marketing', endorsements: 33, isVerified: true },
-      { name: 'Data Analytics', endorsements: 31, isVerified: true },
       { name: 'Product Innovation', endorsements: 28, isVerified: true },
-      { name: 'Technical Integration', endorsements: 27, isVerified: true }
+      { name: 'Market Strategy', endorsements: 26, isVerified: true },
+      { name: 'Sales Strategy', endorsements: 24, isVerified: true },
+      { name: 'Business Development', endorsements: 22, isVerified: true }
     ]
   }
 ];
