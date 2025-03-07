@@ -67,7 +67,7 @@ const SkillCard = ({ skill, category }: { skill: { name: string; endorsements: n
         <span
           className={`text-xs px-3 py-1 rounded-full bg-gradient-to-r ${group?.color || 'from-gray-400/20 to-gray-400/20 border-gray-400/40'} border border-opacity-40`}
         >
-          {category}
+          {group?.title || category}
         </span>
       </div>
     </div>
