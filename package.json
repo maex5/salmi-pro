@@ -1,0 +1,35 @@
+{
+  "name": "salmi-pro",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "update-linkedin": "chmod +x scripts/update-linkedin-data.sh && ./scripts/update-linkedin-data.sh",
+    "get-linkedin-token": "node scripts/get-linkedin-token.js"
+  },
+  "dependencies": {
+    "next": "14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/node-fetch": "^2.6.11",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "autoprefixer": "^10.4.18",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.1.0",
+    "node-fetch": "^2.7.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "terser-webpack-plugin": "^5.3.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
