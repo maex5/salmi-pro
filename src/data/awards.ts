@@ -1,3 +1,5 @@
+import { judges } from "./judges";
+
 export interface Award {
   title: string;
   company: string;
@@ -32,7 +34,7 @@ export const awards: Award[] = [
       { text: 'Tilaajavastuu', url: 'https://www.tilaajavastuu.fi/en/' },
       { text: 'Ultrahack', url: 'http://www.ultrahack.org/' }
     ],
-    buzzwords: ['Digital Transformation', 'API Integration', 'UI/UX', 'Node.js']
+    buzzwords: ['Digital Transformation', 'API Integration', 'UI/UX']
   },
   {
     title: '#1 - First place in Qvik speed coding challenge',
@@ -96,7 +98,7 @@ export const awards: Award[] = [
     title: '#1 - Best Daddy in the World',
     company: 'My family since 2014',
     year: '2014',
-    description: 'Judges: Alex (5 yr.), Victoria (4 yr.) and Cecilia (0 yr.).',
+    description: `Judges: Alex (${judges[0].getAge()} yr.), Victoria (${judges[1].getAge()} yr.) and Cecilia (${judges[2].getAge()} yr.).`,
     logo: '/hearth.svg',
     bgColor: '#ffffff',
     buzzwords: ['Team Leadership', 'Cross-functional Teams', 'Team Building']

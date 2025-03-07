@@ -33,18 +33,18 @@ const ceciliaAge = calculateAge(new Date(2019, 6)); // July 2019
 const AwardCard = ({ award }: { award: Award }) => {
   const content = (
     <>
-      <div className="relative w-16 h-16 flex-shrink-0 rounded-full overflow-hidden" style={{ backgroundColor: award.bgColor }}>
-        <div className="absolute inset-3">
+      <div className="relative w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden" style={{ backgroundColor: award.bgColor }}>
+        <div className="absolute inset-2 sm:inset-3">
           <Image
             src={award.logo}
             alt={`${award.company} logo`}
             fill
-            sizes="(max-width: 64px) 100vw, 64px"
+            sizes="(max-width: 48px) 100vw, 64px"
             className="object-contain"
           />
         </div>
       </div>
-      <div>
+      <div className="flex-1 min-w-0">
         <h3 className="text-xl font-semibold mb-1">{award.title}</h3>
         <p className="text-gray-400 mb-2">
           {award.links ? (
@@ -74,7 +74,7 @@ const AwardCard = ({ award }: { award: Award }) => {
               return (
                 <span
                   key={word}
-                  className={`text-xs px-3 py-1 rounded-full bg-gradient-to-r ${group?.color || 'from-gray-400/20 to-gray-400/20 border-gray-400/40'} border border-opacity-40`}
+                  className={`text-xs px-3 py-1 rounded-full ${group?.color || 'from-gray-400/20 to-gray-400/20 border-gray-400/40'} border border-opacity-40`}
                 >
                   {word}
                 </span>
@@ -88,7 +88,7 @@ const AwardCard = ({ award }: { award: Award }) => {
 
   return (
     <div className="glass-card p-6 mb-6 animate-fade-in">
-      <div className="flex items-start gap-4">
+      <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
         {content}
       </div>
     </div>
@@ -99,7 +99,7 @@ export default function Awards() {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4 max-w-5xl">
-        <h2 className="text-gradient mb-12 text-5xl">Awards & Recognition</h2>
+        <h2 className="text-gradient mb-12 text-4xl sm:text-5xl">Awards & Recognition</h2>
         {awards.map((award, index) => (
           <AwardCard key={index} award={award} />
         ))}

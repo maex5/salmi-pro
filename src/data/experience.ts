@@ -1,3 +1,5 @@
+import { judges } from './judges';
+
 export interface ExperienceItem {
   title: string;
   company: string;
@@ -35,7 +37,7 @@ I specialize in integrating and managing ad technologies, mentoring teams, and d
 
 Beyond ad tech, I bridge business and technical needs, working closely with leadership and stakeholders to align strategy, research solutions, and ensure seamless execution. I also leverage AI-driven tools and automation to streamline workflows, improve efficiency, and drive innovation in digital advertising.`,
     technologies: ['Ad Tech', 'Programmatic', 'Header Bidding', 'Prebid.js', 'Ad Operations', 'AI Tools', 'ChatGPT', 'Copilot', 'Automation', 'Performance Optimization', 'Revenue Growth', 'Team Leadership', 'Project Management', 'Cross-functional Teams', 'Strategic Planning', 'Stakeholder Management', 'Team Building', 'Mentoring', 'Technical Leadership'],
-    logo: '/schibsted_symbol_black_rgb.svg',
+    logo: '/schibsted_logo.png',
     bgColor: '#ffffff'
   },
   {
