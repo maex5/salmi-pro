@@ -76,8 +76,8 @@ export default function Contact() {
               />
               <ContactInfo
                 icon={FaGlobe}
-                text="http://salmi.pro/"
-                link="http://salmi.pro/"
+                text="https://salmi.pro/"
+                link="https://salmi.pro/"
               />
               <ContactInfo
                 icon={FaLinkedin}
