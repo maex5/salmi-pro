@@ -1,6 +1,6 @@
 'use client';
 
-import { buzzwordGroups, type BuzzwordGroup } from '@/components/About';
+import { buzzwordGroups, type BuzzwordGroup } from '@/data/buzzwords';
 
 interface SkillCategory {
   name: string;
