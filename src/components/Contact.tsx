@@ -20,7 +20,7 @@ const ContactInfo = ({ icon: Icon, text, link }: { icon: any; text: string; link
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className="glass-card p-6 animate-fade-in hover:bg-white/5 transition-all duration-300 block"
+        className="glass-card p-6 animate-fade-in block"
       >
         <div className="flex items-center gap-4">
           {content}
