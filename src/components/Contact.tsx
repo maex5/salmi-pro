@@ -3,17 +3,6 @@
 import { FaEnvelope, FaMapMarkerAlt, FaPhone, FaGlobe, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const ContactInfo = ({ icon: Icon, text, link }: { icon: any; text: string; link?: string }) => {
-  const content = (
-    <>
-      <div className="p-3 rounded-full bg-white/10">
-        <Icon className="h-6 w-6 text-white/80" />
-      </div>
-      <div>
-        <span className="text-gray-300">{text}</span>
-      </div>
-    </>
-  );
-
   if (link) {
     return (
       <a
@@ -23,7 +12,10 @@ const ContactInfo = ({ icon: Icon, text, link }: { icon: any; text: string; link
         className="glass-card p-6 animate-fade-in block"
       >
         <div className="flex items-center gap-4">
-          {content}
+          <div className="p-3 rounded-full bg-white/10">
+            <Icon className="h-6 w-6 text-white/80" />
+          </div>
+          <span className="text-gray-300">{text}</span>
         </div>
       </a>
     );
@@ -32,7 +24,10 @@ const ContactInfo = ({ icon: Icon, text, link }: { icon: any; text: string; link
   return (
     <div className="glass-card p-6 animate-fade-in">
       <div className="flex items-center gap-4">
-        {content}
+        <div className="p-3 rounded-full bg-white/10">
+          <Icon className="h-6 w-6 text-white/80" />
+        </div>
+        <span className="text-gray-300">{text}</span>
       </div>
     </div>
   );
