@@ -52,7 +52,7 @@ export default function Contact() {
       <div className="container mx-auto px-4 max-w-5xl">
         <h2 className="text-gradient text-left mb-12">Get in Touch</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="glass-card p-8 animate-fade-in">
+          <div>
             <h3 className="text-2xl font-semibold mb-6 text-left">Contact Information</h3>
             <div className="space-y-6">
               <ContactInfo
@@ -87,7 +87,7 @@ export default function Contact() {
             </div>
           </div>
           
-          <div className="glass-card p-8 animate-fade-in">
+          <div>
             <h3 className="text-2xl font-semibold mb-6 text-left">References</h3>
             <div className="space-y-6">
               <Reference
@@ -98,7 +98,13 @@ export default function Contact() {
               />
               <Reference
                 name="Jasse Marin"
-                role="Product Manager"
+                role="Product Manager, Advertising"
+                company="Schibsted"
+                companyUrl="https://www.schibsted.com"
+              />
+              <Reference
+                name="Agustí Pellicer"
+                role="Engineering Manager"
                 company="Schibsted"
                 companyUrl="https://www.schibsted.com"
               />
